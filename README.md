@@ -1,3 +1,11 @@
+
+# Movies-ui
+UI for retrieveing, viewing, and editing movie records from an sql database
+Built with react and using the react-admin module.
+currently deployed at https://movie-db-editor.herokuapp.com/
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
