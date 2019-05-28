@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { render } from 'react-dom';
+import { Admin, Resource } from 'react-admin';
+import simpleRestProvider from 'ra-data-simple-rest';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { MovieList, MovieEdit, MovieCreate, MovieIcon } from './movies';
+
+
+const App = () => (
+        <Admin dataProvider={simpleRestProvider('https://cors-anywhere.herokuapp.com/https://krw-technical-test.herokuapp.com/')}>
+         <Resource name="movies" list={MovieList} edit={MovieEdit} create={MovieCreate} icon={MovieIcon}/>
+          </Admin>
+
+            );
+
 
 export default App;
