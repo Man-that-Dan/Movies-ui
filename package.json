@@ -5,7 +5,7 @@
   "dependencies": {
     "ra-data-simple-rest": "^2.9.1",
     "react": "^16.8.6",
-    "react-admin": "^2.9.1",
+    "react-admin": "^3.19.12",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
